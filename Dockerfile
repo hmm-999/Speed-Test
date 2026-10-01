@@ -1,6 +1,6 @@
 # OpenSpeedTest's page served by the maintained unprivileged nginx image.
-# The base tag floats on purpose: the scheduled workflow rebuilds weekly to
-# pick up nginx and Alpine fixes.
+# The base tag floats on purpose: each build picks up the current nginx and
+# Alpine fixes.
 FROM nginxinc/nginx-unprivileged:stable-alpine-slim
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf

@@ -4,9 +4,6 @@ on:
   push:
     branches: [main]
   pull_request:
-  # Weekly rebuild picks up base image fixes and rescans for new CVEs.
-  schedule:
-    - cron: "23 5 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -67,7 +64,6 @@ jobs:
           images: ${{ env.IMAGE }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
-            type=schedule,pattern={{date 'YYYYMMDD'}}
             type=sha
 
       # Reuses the scanned build from the builder cache.
