@@ -1,3 +1,5 @@
+> **Fork:** builds a vulnerability-scanned, non-root nginx image of this speed test, published as `ghcr.io/hmm-999/speed-test` by [the image workflow](.github/workflows/image.yml).
+
 #  **[SpeedTest by OpenSpeedTest™](https://openspeedtest.com?Run&ref=Github)** - Free & Open-Source HTML5 Network Performance Estimation Tool.
 
   
