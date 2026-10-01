@@ -7,4 +7,5 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html hosted.html License.md downloading upload /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
 
+USER 101
 EXPOSE 8080
